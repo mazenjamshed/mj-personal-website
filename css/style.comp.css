@@ -629,7 +629,7 @@ body {
       margin-top: 0; } }
   @media screen and (max-width: 39em) {
     .contact {
-      padding-right: 5rem; } }
+      width: 95%; } }
   .contact__list {
     list-style: none; }
   .contact__item-name {
