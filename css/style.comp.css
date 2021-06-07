@@ -624,7 +624,6 @@ body {
 .contact {
   border-bottom: var(--rule);
   display: block;
-  width: 100%;
   margin-top: 10rem; }
   @media screen and (max-width: 71.8em) {
     .contact {
