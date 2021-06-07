@@ -1,0 +1,32 @@
+:root {
+  --clr-primary: #f68338;
+
+  --clr-sidebar: #111;
+  --clr-accent: #222;
+
+  --clr-text: #888888;
+  --clr-rule: rgba(136, 136, 136, 0.2);
+
+  --clr-title: #101010;
+
+  --clr-fiverr: #1dbf73;
+
+  --clr-form: #f9f9f9;
+
+  --font-primary: "Rambla", sans-serif;
+  --font-accent: "Oswald", sans-serif;
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --rule: 1px solid var(--clr-rule);
+
+  --shadow-card: 0 0.2rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+$bp-largest: 71.8em;
+$bp-large: 56.25em;
+$bp-800: 50em;
+$bp-medium: 39em;
+$bp-small: 23em;

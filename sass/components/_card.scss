@@ -1,0 +1,37 @@
+.card {
+  text-align: center;
+  min-height: 25rem;
+  border: var(--rule);
+  padding: 2rem;
+  transition: all 0.1s;
+  flex: 0 0 45%;
+  margin-bottom: 5rem;
+
+  @media screen and (max-width: $bp-medium) {
+    flex: 0 0 100%;
+  }
+
+  &:nth-child(odd) {
+    margin-right: 4rem;
+  }
+
+  & > * {
+    margin-bottom: 1rem;
+  }
+  //   &:last-child {
+  //     margin-bottom: 0;
+  //   }
+
+  &__icon {
+    margin-top: 1rem;
+    width: 5rem;
+    height: 5rem;
+    fill: var(--clr-primary);
+  }
+  &__heading {
+    font-size: 1.8rem;
+  }
+  &__content {
+    line-height: 1.8;
+  }
+}

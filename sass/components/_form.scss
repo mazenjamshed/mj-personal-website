@@ -1,0 +1,60 @@
+.form {
+  display: block;
+  width: 50rem;
+  font-size: 1.3rem;
+
+  @media screen and (max-width: $bp-medium) {
+    width: 90%;
+  }
+
+  &__name {
+    position: relative;
+  }
+  &__name--input {
+    padding: 1rem 1.5rem;
+    display: block;
+    width: 100%;
+    background-color: var(--clr-form);
+    border: none;
+    font-family: inherit;
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(--clr-primary);
+    }
+  }
+
+  &__email {
+    position: relative;
+  }
+
+  &__email--input {
+    padding: 1rem 1.5rem;
+    display: block;
+    width: 100%;
+    background-color: var(--clr-form);
+    border: none;
+    font-family: inherit;
+    &:focus {
+      outline: none;
+      border: 1px solid var(--clr-primary);
+    }
+  }
+
+  &__message {
+    position: relative;
+  }
+
+  &__textarea {
+    width: 100%;
+    background-color: var(--clr-form);
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1.5rem;
+    &:focus {
+      outline: none;
+      border: 1px solid var(--clr-primary);
+    }
+  }
+}

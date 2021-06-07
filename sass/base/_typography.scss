@@ -1,0 +1,28 @@
+.heading-2 {
+  font-size: 2.8rem;
+  font-family: var(--font-accent);
+  color: var(--clr-accent);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  animation: fadeInLeft 0.3s;
+}
+.heading-3 {
+  font-size: 1.2rem;
+  font-family: var(--font-accent);
+  color: var(--clr-primary);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  animation: fadeInLeft 0.3s;
+}
+
+.heading-4 {
+  color: var(--clr-title);
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: inherit;
+  hyphens: auto;
+}

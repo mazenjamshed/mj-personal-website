@@ -1,0 +1,28 @@
+.mb-2 {
+  margin-bottom: 3rem !important;
+}
+.mb-5 {
+  margin-bottom: 15rem !important;
+}
+.mt-5 {
+  margin-top: 10rem !important;
+}
+.mt-2 {
+  margin-top: 3rem !important;
+}
+
+.flow-content > * + * {
+  margin-top: 2.5rem !important;
+}
+.flow-content--small > * + * {
+  margin-top: 1rem !important;
+}
+
+.container {
+  padding: 6rem 0;
+  margin: 0 6rem;
+  @media screen and (max-width: $bp-medium) {
+    padding: 3rem 0;
+    margin: 0 3rem;
+  }
+}

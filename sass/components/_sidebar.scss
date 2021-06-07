@@ -1,0 +1,122 @@
+.sidebar {
+  background-color: var(--clr-sidebar);
+  position: fixed;
+  max-width: 30vw;
+  height: 100vh;
+  top: 0;
+  right: -30vw;
+  padding: 5rem;
+  font-size: 1.5rem;
+  opacity: 0.1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s;
+  z-index: 100;
+  &__main-heading {
+    color: #fff;
+  }
+
+  &__figure {
+    width: 13rem;
+    height: 13rem;
+    clip-path: circle(50% at 50% 50%);
+    position: relative;
+  }
+
+  &__caption {
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    transition: all 0.4s;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+  }
+
+  &__figure:hover &__caption {
+    top: 50%;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  &__figure:hover &__img {
+    filter: blur(0.4rem);
+  }
+
+  &__toggle {
+    position: fixed;
+    top: 5rem;
+    right: 3rem;
+    animation: fadeInLeft 0.6s 0.4s;
+    animation-fill-mode: backwards;
+    opacity: 1;
+    z-index: 101;
+
+    @media screen and (max-width: $bp-largest) {
+      position: absolute;
+      top: 3.5rem;
+      transform: scale(1.1);
+    }
+    @media screen and (max-width: $bp-800) {
+      top: 2rem;
+      right: 2rem;
+
+      transform: scale(1);
+    }
+
+    @media screen and (max-width: $bp-small) {
+      top: 1.4rem;
+      right: 1.3rem;
+
+      transform: scale(0.8);
+    }
+  }
+}
+
+.sideinput {
+  display: none;
+}
+.sideinput:checked ~ .sidebar {
+  right: 0;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.sideinput:checked ~ .side-nav {
+  right: -60vw;
+  opacity: 1;
+  transition: all 0.3s;
+  visibility: visible;
+
+  @media screen and (max-width: $bp-largest) {
+    right: -10vw;
+  }
+  @media screen and (max-width: $bp-large) {
+    right: -5vw;
+  }
+  @media screen and (max-width: $bp-800) {
+    right: 0;
+  }
+}
+
+.sideinput:checked ~ .overlay {
+  opacity: 0.7;
+  visibility: inherit;
+}
+
+.sideinput:checked ~ .sidebar__toggle .nav-btn {
+  transform: rotate(-90deg);
+  transition: all 0.001s;
+}

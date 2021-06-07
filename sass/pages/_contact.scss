@@ -1,0 +1,22 @@
+.contact {
+  border-bottom: var(--rule);
+  display: block;
+  width: 100%;
+  margin-top: 10rem;
+
+  @media screen and(max-width:$bp-largest) {
+    margin-top: 0;
+  }
+
+  @media screen and(max-width:$bp-medium) {
+    padding-right: 5rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+  &__item-name {
+    color: var(--clr-title);
+    font-weight: 700;
+  }
+}

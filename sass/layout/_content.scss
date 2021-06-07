@@ -1,0 +1,14 @@
+.content {
+  flex: 1;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 36vw;
+  // flex: 0 0 64%;
+  // order: 2;
+  // width: 60rem;
+
+  @media screen and (max-width: $bp-largest) {
+    position: static;
+  }
+}

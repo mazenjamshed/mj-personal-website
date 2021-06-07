@@ -1,0 +1,10 @@
+.split {
+  display: flex;
+  position: relative;
+  // width: 100vw;
+  // height: 70vh;
+  // flex: 0 0 100%;
+  @media screen and (max-width: $bp-largest) {
+    flex-direction: column;
+  }
+}
